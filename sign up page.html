@@ -1,0 +1,142 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            width: 800px;
+            height: 500px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .left {
+            background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 20px;
+        }
+        .left i {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        .left h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .left p {
+            margin: 10px 0 0;
+        }
+        .right {
+            background-color: #ffffff;
+            flex: 1.5;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #333;
+            position: relative;
+        }
+        .right h2 {
+            margin: 0 0 20px;
+            font-size: 24px;
+        }
+        .right input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .right input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .right label {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+        .right button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        .right a {
+            color: #6a11cb;
+            text-decoration: none;
+        }
+        .right .social {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .right .social a {
+            color: #333;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        .login-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #f9f9f9;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: #333;
+            text-decoration: none;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <i class="fas fa-music"></i>
+            <h1>Join us</h1>
+            <p>The only music that matters</p>
+        </div>
+        <div class="right">
+            <!-- <a href="#" class="login-btn">Login</a> -->
+            <!-- <h2>Registration</h2> -->
+            <input type="text" placeholder="User name" required>
+            <input type="email" placeholder="Email address" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <label>
+                <input type="checkbox"> I agree to Terms & Conditions
+            </label>
+            <a href="index.html"><button>Sign Up</button></a>
+            <p>Already registered? <a href="login_page.html">Click here to login</a></p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

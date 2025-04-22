@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <div class="menu_side">
+            <h1>Music Media</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
+                <a href="liked_songs.html"><h4><span></span><i class="bi bi-music-note-beamed"></i>Liked Songs</h4></a>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Recommended Songs</h4>
+                <h4><a href="premium.html"><button style="border-radius: 30px; padding: 10px; background-color: azure;">Explore Premium</button></a></h4>
+            </div>
+            <div class="menu_song">
+                <li class="songItem">
+                    <span>01</span>
+                    <img src="devara.jpg" alt="Devara">
+                    <audio src="Fear.mp3"></audio>
+                    <h5>Fear Song(From devara 1)<br><div class="subtitle">Anirudh</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                </li>
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="cheli.webp" alt="Cheli">
+                    <audio src="Varsincha Megamla.mp3"></audio>
+                    <h5>Varshinche Meghamla Nenunna(From Cheli) <br><div class="subtitle">Harris Jayaraj, Bhuvana Chandra</div>
+                    </h5>
+                    <i class="bi playlistPlay bi-play-circle-fill" id="2"></i>
+                </li>
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="sakhi.jpg" alt="Sakhi">
+                    <audio src="06 - Pachchadanamey - SenSongsMp3.co.mp3"></audio>
+                    <h5>Pachchadanamey(From Sakhi)<br><div class="subtitle">Hariharan, Clinton Cerejo</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                </li>
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="panja.jpg" alt="panja">
+                    <audio src="[iSongs.info] 02 - Ela Ela.mp3"></audio>
+                    <h5>Ela Ela Naalo(From Panja) <br><div class="subtitle">Hariharan, Shweta Pandit</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                </li>
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="hi-nanna.avif" alt="hi nanna">
+                    <audio src="[iSongs.info] 05 - Odiyamma.mp3"></audio>
+                    <h5>Odiyamma(From Hi Nanna)<br><div class="subtitle">Dhruv Vikram, Shruthi Hasan, Chinmayi</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+                </li>
+                <li class="songItem">
+                    <span>06</span>
+                    <img src="rangam.jpeg" alt="rangam">
+                    <audio src="06 - Nemali - SenSongsmp3.Co.mp3"></audio>
+                    <h5>Nemali Kulkula(From Rangam) <br><div class="subtitle">Hariharan, Unnikrishnan, Shweta Mohan, Chinmayi</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+                </li>
+                <li class="songItem">
+                    <span>07</span>
+                    <img src="sikindar.jpg" alt="sikindar">
+                    <audio src="Nene Kani Nenai Undaga-SenSongsMp3.Co.mp3"></audio>
+                    <h5>Nene Kani Nenai Undaga(From Sikindar)<br><div class="subtitle">Yuvan Shankar Raja, Hariharan,Deepak Blue</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                </li>
+                <li class="songItem">
+                    <span>08</span>
+                    <img src="arjun reddy.jpeg" alt="Arjun Reddy">
+                    <audio src="Telisiney Na Nuvvey (From Arjun Reddy).mp3"></audio>
+                    <h5>Telisiney Naa Nuvvey(Arjun Reddy)<br><div class="subtitle">L.V. Revanth</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                </li>
+            </div>
+        </div>
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <li>Discover <span></span></li>
+                    <li>MY LIBRARY</li>
+                    <li>RADIO</li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Music...">
+                </div>
+            </nav>
+            <br>
+            <div class="popular_song">
+                <div class="h4">
+                    <h4>Recently played</h4>
+                    <!-- <div class="btn_s">
+                        <i class="bi bi-arrow-left-short" id="pop_song_left"></i>
+                        <i class="bi bi-arrow-right-short" id="pop_song_right"></i>
+                    </div> -->
+                </div>
+                <div class="pop_song">
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="rx 100.jpg" alt="RX 100">
+                            <audio src="Pillaa Raa - SenSongsMp3.Co.mp3"></audio>
+                            <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                        </div>
+                        <h5>Pillaa Raa(RX 100) <br><div class="subtitle">Anurag Kulkarni, Chaitan Bharadwaj</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="gang leader.jpg" alt="Gangleader">
+                            <audio src="Hoyna Hoyna - SenSongsMp3.Co.mp3"></audio>
+                            <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                        </div>
+                        <h5>Hoyna Hoyna(Gang Leader)<br><div class="subtitle">Anirudh Ravichander, Inno Genga</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="sardar gabbar singh.jpg" alt="Sardar Gabbar Singh">
+                            <audio src="Nee Chepakallu - SenSongsMp3.Co.mp3"></audio>
+                            <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                        </div>
+                        <h5>Nee Chepakallu(Sardar Gabbar Singh)<br><div class="subtitle">Sagar, Chinmayi</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="life is beautiful.jpg" alt="Life is beautiful">
+                            <audio src="Its Your Love - SenSongsmp3.Co.mp3"></audio>
+                            <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                        </div>
+                        <h5>Its your love(Life is beautiful) <br><div class="subtitle">Mickey J.Meyer, Naresh Iyer</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="Aarya-2.jpg" alt="Aarya 2">
+                            <audio src="[iSongs.info] 02 - Uppenantha.mp3"></audio>
+                            <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+                        </div>
+                        <h5>Uppenantha(Aarya 2)<br><div class="subtitle">Devi Sri Prasad, KK</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="rrr.jpg" alt="RRR">
+                            <audio src="Nattu Nattu.mp3"></audio>
+                            <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+                        </div>
+                        <h5>Naatu Naatu(RRR)<br><div class="subtitle">Rahul Sipligunj, Kala Bhairava</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="padi padi leche manasu.jpg" alt="Padi Padi Leche Manasu">
+                            <audio src="[iSongs.info] 02 - Kallolam.mp3"></audio>
+                            <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+                        </div>
+                        <h5>Kallolam(Padi Padi Leche Manasu)<br><div class="subtitle">Anurag Kulkarni</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="jalsa.jpg" alt="Jalsa">
+                            <audio src="Jennifer Lopez-SenSongsMp3.Co.mp3"></audio>
+                            <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
+                        </div>
+                        <h5>Jennifer Lopez(Jalsa)<br><div class="subtitle">Benny Dayal, Priya</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="Devara-Chuttamalle.jpg" alt="Devara">
+                            <audio src="[iSongs.info] 03 - Chuttamalle.mp3"></audio>
+                            <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
+                        </div>
+                        <h5>Chuttamalle(Devara)<br><div class="subtitle">Shilpa Rao, Anirudh Ravichander, Ramajogayya Sastry</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="mr bachchan.jpg" alt="Mr. Bachchan">
+                            <audio src="[iSongs.info] 02 - Reppal Dappul.mp3"></audio>
+                            <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
+                        </div>
+                        <h5>Reppal Dappul(Mr. Bachchan)<br><div class="subtitle">Anurag Kulkarni, Mangli, Mickey J.Meyer</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="guntur kaaram.jpg" alt="Guntur Kaaram">
+                            <audio src="Kurchi Madathapetti.mp3"></audio>
+                            <i class="bi playListPlay bi-play-circle-fill" id="19"></i>
+                        </div>
+                        <h5>Kurchi Madathapetti(Guntur Kaaram)<br><div class="subtitle">Thaman S</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="raghuvaran b tech.jpeg" alt="Raghuvaran B Tech">
+                            <audio src="Luckkanna Mate Nillu - SenSongsMp3.Co.mp3"></audio>
+                            <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                        </div>
+                        <h5>Luckkanna Maate Nillu<br><div class="subtitle">L.V.Revanth</div>
+                        </h5>
+                    </li>
+                </div> 
+                <div class="popular_artists">
+                    <div class="h4">
+                        <h4>Telugu Melodies</h4>
+                        <!-- <div class="btn_s">
+                            <i class="bi bi-arrow-left-short" id="pop_art_left"></i>
+                            <i class="bi bi-arrow-right-short" id="pop_art_right"></i> 
+                        </div> -->
+                    </div>
+                    <div class="Melodies">
+                        <li class="songItem">
+                            <div class="img_play">
+                                <img src="varsham.webp" alt="Varsham">
+                                <audio src="Neeti Mullai-SenSongsMp3.Co.mp3"></audio>
+                                <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                            </div>
+                            <h5>Neeti Mullai(Varsham)<br><div class="subtitle">Sagar, Sumangaly</div>
+                            </h5>
+                        </li>
+                        <li class="songItem">
+                            <div class="img_play">
+                                <img src="garshana.jpeg" alt="Garshana">
+                                <audio src="05 - Ye Chilipi  - SenSongsMp3.co.mp3"></audio>
+                                <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                            </div>
+                            <h5>Ye Chilipi(Garshana)<br><div class="subtitle">Srinivas</div>
+                            </h5>
+                        </li>
+                        <li class="songItem">
+                            <div class="img_play">
+                                <img src="awara.jpg" alt="awara">
+                                <audio src="1-Chiru Chiru Chiru-SenSongsMp3.Co.mp3"></audio>
+                                <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                            </div>
+                            <h5>Chiru Chiru(Awara)<br><div class="subtitle">Yuvan Shankar Raja</div>
+                            </h5>
+                        </li>
+                        <li class="songItem">
+                            <div class="img_play">
+                                <img src="Hello-2017.jpg" alt="Hello">
+                                <audio src="Yevevo - SenSongsMp3.Co.mp3"></audio>
+                                <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                            </div>
+                            <h5>Yevevo(Hello)<br><div class="subtitle">Akhil Akkineni</div>
+                            </h5>
+                        </li>
+                        <li class="songItem">
+                            <div class="img_play">
+                                <img src="Om-Bheem-Bush.jpg" alt="Om bheem bush">
+                                <audio src="anuvanuvu.mp3"></audio>
+                                <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                            </div>
+                            <h5>Anuvanuvu(Om Bheem Bush)<br><div class="subtitle">Arjith Singh</div>
+                            </h5>
+                        </li>
+                        <li class="songItem">
+                            <div class="img_play">
+                                <img src="Hit-2.jpg" alt="Hit 2">
+                                <audio src="Urike Urike.mp3"></audio>
+                                <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                            </div>
+                            <h5>Urike Urike(Hit-2)<br><div class="subtitle">MM Sreelekha, Sid Sriram, Ramya Behara</div>
+                            </h5>
+                        </li>
+                        <li class="songItem">
+                            <div class="img_play">
+                                <img src="ori devuda.jpeg" alt="Ori Devuda">
+                                <audio src="avunanava.mp3"></audio>
+                                <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                            </div>
+                            <h5>Avunanavaa(Ori Devudaa)<br><div class="subtitle">Leon James, Sid Sriram</div>
+                            </h5>
+                        </li>
+                        <li class="songItem">
+                            <div class="img_play">
+                                <img src="Liger.jpg" alt="Liger">
+                                <audio src="Kalalo Kooda.mp3"></audio>
+                                <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                            </div>
+                            <h5>Kalalo Kooda(Liger)<br><div class="subtitle">Tanishk Bagchi, Sid Sriram, Vaishnavi Kovvuri</div>
+                            </h5>
+                        </li>
+                        <li class="songItem">
+                            <div class="img_play">
+                                <img src="Andala-Rakshasi.jpg" alt="Andaala Rakshasi">
+                                <audio src="Ye Mantramo - SenSongsmp3.Co.mp3"></audio>
+                                <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                            </div>
+                            <h5>Ye Mantramo(Andaala Rakshasi)<br><div class="subtitle">Bobo Shashi</div>
+                            </h5>
+                        </li>
+                        <li class="songItem">
+                            <div class="img_play">
+                                <img src="Orange-2010.jpg" alt="Orange">
+                                <audio src="6-Rooba Rooba-SenSongsMp3.Co.mp3"></audio>
+                                <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                            </div>
+                            <h5>Rooba Rooba(Orange)<br><div class="subtitle">Chinmayi, Shail Hada</div>
+                            </h5>
+                        </li>
+                        <li class="songItem">
+                            <div class="img_play">
+                                <img src="Fidaa-2017.jpg" alt="Fidaa">
+                                <audio src="[iSongs.info] 04 - Oosupodu.mp3"></audio>
+                                <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                            </div>
+                            <h5>Oosupodu(Fidaa)<br><div class="subtitle">Hema Chandra</div>
+                            </h5>
+                        </li>
+                        <li class="songItem">
+                            <div class="img_play">
+                                <img src="nenu local.jpeg" alt="Nenu Local">
+                                <audio src="Arere Yekkada-SenSongsMp3.Co.mp3"></audio>
+                                <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                            </div>
+                            <h5>Arere Ekkada(Nenu Local)<br><div class="subtitle">Naresh Iyer</div>
+                            </h5>
+                        </li>
+                    </div>
+                    <div class="popular_artists">
+                        <div class="h4">
+                            <h4>Mass Beats</h4>
+                        </div>
+                        <div class="Mass_Songs">
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="dhamaka.jpg" alt="dhamaka">
+                                    <audio src="Jinthaak.mp3"></audio>
+                                    <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                                </div>
+                                <h5>Jinthaak(Dhamaka)<br><div class="subtitle">Bheems Ceciroleo, Mangli</div>
+                                </h5>
+                            </li>   
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="Vinaya-Vidheya-Rama.jpg" alt="vinaya vidheya rama">
+                                    <audio src="Ek Baar - SenSongsMp3.Co.mp3"></audio>
+                                    <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                                </div>
+                                <h5>Ek Baar(Vinaya Vidheya Rama)<br><div class="subtitle">Devi Sri Prasad, Ranina Reddy</div>
+                                </h5>
+                            </li>   
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="Vikrant-Rona.jpg" alt="Vikranth Rona">
+                                    <audio src="Ra-Ra-Rakkamma(PaglaSongs).mp3"></audio>
+                                    <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                                </div>
+                                <h5>Ra-Ra-Rakkamma(Vikranth Rona)<br><div class="subtitle">Nakash Aziz, Sunidhi Chauhan</div>
+                                </h5>
+                            </li>   
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="sarrainodu.jpg" alt="sarrainodu">
+                                    <audio src="Blockbuster  - SenSongsMp3.Co.mp3"></audio>
+                                    <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                                </div>
+                                <h5>Blockbuster(Sarrainodu)<br><div class="subtitle"> Shreya Ghoshal, Nakash Aziz, Simha, Sri Krishna, Deepu</div>
+                                </h5>
+                            </li>   
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="dhamaka.jpg" alt="Dhamaka">
+                                    <audio src="Pulsar Bike.mp3"></audio>
+                                    <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                                </div>
+                                <h5>Pulsar Bike(Dhamaka)<br><div class="subtitle">Yallinti Ramana</div>
+                                </h5>
+                            </li>   
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="Ala-Vaikuntapuramlo.jpg" alt="Ala Vaikuntapuramlo">
+                                    <audio src="raamulo ramula.mp3"></audio>
+                                    <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                                </div>
+                                <h5>Ramulo Ramulaa(Ala Vaikuntapuramlo)<br><div class="subtitle">Anurag Kulkarni, Mangli</div>
+                                </h5>
+                            </li>   
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="Iddarammayilatho.jpg" alt="Iddarammayilatho">
+                                    <audio src="Top Lesi Poddi-SenSongsMp3.Com.mp3"></audio>
+                                    <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                                </div>
+                                <h5>Top Lesi Podhi(Iddarammayilatho)<br><div class="subtitle">Sagar, Geetha Madhuri</div>
+                                </h5>
+                            </li>   
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="MAD-.jpg" alt="Mad">
+                                    <audio src="college papa.mp3"></audio>
+                                    <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                                </div>
+                                <h5>College Papa(Mad)<br><div class="subtitle">Bheems Ceciroleo,Varam, Keerthana Sharma</div>
+                                </h5>
+                            </li>   
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="Gabbar-Singh.jpg" alt="Gabbar Singh">
+                                    <audio src="Kevvu Keka-SenSongsMp3.Co.mp3"></audio>
+                                    <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                                </div>
+                                <h5>Kevvu Keka(Gabbar Singh)<br><div class="subtitle">Mamta Sharma, Murali</div>
+                                </h5>
+                            </li>   
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="Mr-Perfect.jpg" alt="Mr Perfect">
+                                    <audio src="Light Theesko-SenSongsMp3.Co (1).mp3"></audio>
+                                    <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                                </div>
+                                <h5>Light Teesko(Mr Perfect)<br><div class="subtitle">Baba Sehgal, Murali</div>
+                                </h5>
+                            </li>   
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="Aarya-2.jpg" alt="Aarya 2">
+                                    <audio src="4-Ring Ringa-SenSongsMp3.Co.mp3"></audio>
+                                    <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                                </div>
+                                <h5>Ring Ringa(Aarya 2)<br><div class="subtitle">Priya Hemesh</div>
+                                </h5>
+                            </li>   
+                            <li class="songItem">
+                                <div class="img_play">
+                                    <img src="Mirchi.jpg" alt="Mirchi">
+                                    <audio src="4-Mirchi-SenSongsMp3.Co.mp3"></audio>
+                                    <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                                </div>
+                                <h5>Mirchi(Mirchi)<br><div class="subtitle">Chinna Ponnu</div>
+                                </h5>
+                            </li>   
+                </div>
+            </div>
+        </div>
+        <div class="popular_song">
+            <div class="h4">
+                <h4>Jump Back In</h4>
+                <!-- <div class="btn_s">
+                    <i class="bi bi-arrow-left-short" id="pop_song_left"></i>
+                    <i class="bi bi-arrow-right-short" id="pop_song_right"></i>
+                </div> -->
+            </div>
+            <div class="Jump_back"> 
+                <li class="songItem">
+                    <a href="chirutha.html"><div class="img_play">
+                        <img src="chirutha1.jpg" alt="Chirutha">
+                        <i class="bi playListPlay bi-play-circle-fill"></i></a>
+                    </div>
+                    <h5>Chirutha<br><div class="subtitle">Mani Sharma</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <a href="mr perfect.html"><div class="img_play">
+                        <img src="Mr-Perfect.jpg" alt="Mr Perfect">
+                        <i class="bi playListPlay bi-play-circle-fill"></i></a>
+                    </div>
+                    <h5>Mr Perfect<br><div class="subtitle">Devi Sri Prasad</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <a href="nuvvosthanante vaddantanana.html"><div class="img_play">
+                        <img src="nuvvostanante nenoddanatana.jpeg" alt="Nuvvosthanante vaddantanana">
+                        <i class="bi playListPlay bi-play-circle-fill"></i></a>
+                    </div>
+                    <h5>Nuvvosthanante Nenuvaddantana<br><div class="subtitle">Devi Sri Prasad</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <a href="gabbarsingh.html"><div class="img_play">
+                        <img src="Gabbar-Singh.jpg" alt="Gabbar Singh">
+                        <i class="bi playListPlay bi-play-circle-fill"></i></a>
+                    </div>
+                    <h5>Gabbar Singh<br><div class="subtitle">Devi Sri Prasad</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <a href="kushi.html"><div class="img_play">
+                        <img src="Kushi.jpg" alt="Kushi">
+                        <i class="bi playListPlay bi-play-circle-fill"></i></a>
+                    </div>
+                    <h5>Kushi<br><div class="subtitle">Mani Sharma</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <a href="raghuvaran btech.html"><div class="img_play">
+                        <img src="raghuvaran b tech.jpeg" alt="Padi Padi Leche Manasu">
+                        <i class="bi playListPlay bi-play-circle-fill"></i></a>
+                    </div>
+                    <h5>Raghuvaran B Tech<br><div class="subtitle">Anirudh Ravichander</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <a href="jathiratnalu.html"><div class="img_play">
+                        <img src="jathiratnalu.jpg" alt="Jathiratnalu">
+                        <i class="bi playListPlay bi-play-circle-fill"></i></a>
+                    </div>
+                    <h5>Jathiratnalu<br><div class="subtitle">Radhan</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <a href="majili.html"><div class="img_play">
+                        <img src="majili.jpg" alt="majili">
+                        <i class="bi playListPlay bi-play-circle-fill"></i></a>
+                    </div>
+                    <h5>Chuttamalle(Devara)<br><div class="subtitle">Shilpa Rao, Anirudh Ravichander, Ramajogayya Sastry</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <a href="oy.html"><div class="img_play">
+                        <img src="oye.jpg" alt="Oye">
+                        <i class="bi playListPlay bi-play-circle-fill"></i></a>
+                    </div>
+                    <h5>Oye<br><div class="subtitle">Yuvan Shankar Raja</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <a href="gangleader.html"><div class="img_play">
+                        <img src="gang leader.jpg" alt="Gangleader">
+                        <i class="bi playListPlay bi-play-circle-fill"></i></a>
+                    </div>
+                    <h5>Nani's Gangleader<br><div class="subtitle">Anirudh Ravichander</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <a href="sita raamam.html"><div class="img_play">
+                        <img src="sita raamam.jpg" alt="Sita raamam">
+                        <i class="bi playListPlay bi-play-circle-fill"></i></a>
+                    </div>
+                    <h5>Sita Raamam<br><div class="subtitle">Vishal Chandrasekhar</div>
+                    </h5>
+                </li>
+            </div> 
+        <div class="master_play">
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="music_logo.webp" alt="Music_logo" id="poster_master_play"> 
+            <h5 id="title">
+                Fear Song (From Devara 1)
+                <div class="subtitle">Anirudh</div>
+            </h5>
+            <div class="icon">
+                <i class="bi shuffle bi-music-note-beamed"></i>
+                <i class="bi bi-skip-start-fill"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end-fill"></i>
+                <a href="premium.html" style="color: white;"><i class="bi bi-cloud-arrow-down-fill" id="download_music"></i></a>
+            </div>
+            <!-- <span id="currentStart">0.00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0.30</span> 
+            <div class="vol">
+                <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+                <input type="range" min="0" max="100" id="vol">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div> -->
+        </div>
+    </header>
+    <script src="app1.js"></script>
+</body>
+</html>

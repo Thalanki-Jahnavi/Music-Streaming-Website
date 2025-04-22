@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', 'sans-serif';
+    width: 100%;
+    height: 100%;
+    background-color: #121213;
+    /* display: grid; */
+    place-items: center;
+}
+header {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+header .menu_side , .song_side {
+    width: 100%;
+    height: 1500px;
+    /* border: 1px solid #fff;  */
+    background: #111727;
+    box-shadow: 5px 0px 2px #090f1f;
+}
+header .song_side {
+    width: 75%;
+    background: #0b1320;
+}
+header .menu_side h1 {
+    font-size: 20px;
+    margin: 15px 0px 0px 20px;
+    font-weight: 500;
+}
+header .menu_side .playlist {
+    margin: 40px 0px 0px 20px;
+}
+header .menu_side .playlist h4 {
+   font-size: 14px;
+   font-weight: 400;
+   padding-bottom: 10px;
+   color: #4c5262;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   transition: .3s linear;
+}
+header .menu_side .playlist h4:hover {
+    color: #fff;
+}    
+header .menu_side .playlist h4 span{
+    position: relative;
+    margin-right: 35px;
+}    
+header .menu_side .playlist h4 span::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #4c5262;
+    border-radius: 50px;
+    top: -4px;
+    transition: .3s linear;
+}    
+header .menu_side .playlist h4:hover span::before{
+    border: 2px solid #fff;
+}    
+header .menu_side .playlist h4 .bi {
+    display: none;
+}   
+header .menu_side .playlist .active {
+   color: #36e2ec;
+}     
+header .menu_side .playlist .active span {
+    display: none;
+}  
+header .menu_side .playlist .active .bi {
+    display: flex;
+    margin-right: 20px;
+}     
+header .menu_side .menu_song {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    margin-top: 40px;
+    overflow: auto;
+} 
+header .menu_side .menu_song::-webkit-scrollbar {
+    display: none;
+}
+header .menu_side .menu_song li {
+   list-style-type: none;
+   position: relative;
+   padding: 5px 0px 5px 20px;
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+   cursor: pointer;
+   transition: .3s linear;
+}   
+header .menu_side .menu_song li:hover {
+    background: rgb(105, 105, 105, .1);
+}  
+header .menu_side .menu_song li span {
+    color: #4c5262;
+    font-size: medium;
+}  
+header .menu_side .menu_song li img {
+    width: 32px;
+    height: 32px;
+    margin-left: 25px;
+}
+header .menu_side .menu_song li h5{
+    font-size: 11px;
+    margin-left: 15px;
+    width: 170px;
+    /* border: 1px solid #fff; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+header .menu_side .menu_song li h5 .subtitle {
+    font-size: 9px;
+    color: #4c5262;
+}
+header .menu_side .menu_song li .bi {
+    position: absolute;
+    right: 15px;
+    font-size: 16px;
+}  
