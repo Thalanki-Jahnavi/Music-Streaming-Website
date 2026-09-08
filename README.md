@@ -71,47 +71,73 @@ Music-Streaming-Website/
 ├── database.sql
 │
 └── README.md
-🚀 How to Run the Project
 
-Follow the steps below to run the project on your local system.
+## 🚀 How to Run the Project
 
-1. Clone the Repository
+Follow these steps to run the Music Streaming Website on your local system.
+
+### Prerequisites
+
+Make sure the following are installed on your computer:
+
+- XAMPP
+- Web Browser
+- Git (optional, if cloning the repository)
+
+### Step 1: Clone the Repository
+
+Open Command Prompt or Git Bash and run:
+
+```bash
 git clone https://github.com/Thalanki-Jahnavi/Music-Streaming-Website.git
-2. Move the Project to XAMPP
 
-If you are using XAMPP, copy the project folder into the htdocs directory.
+Or download the repository as a ZIP file from GitHub.
+
+Step 2: Move the Project to XAMPP
+
+If you downloaded the project as a ZIP file, extract it.
+
+Copy the Music-Streaming-Website folder into the XAMPP htdocs directory:
 
 C:\xampp\htdocs\
 
-The final path should look similar to:
+The project should be located at:
 
 C:\xampp\htdocs\Music-Streaming-Website\
-3. Start XAMPP
+Step 3: Start XAMPP
 
-Open the XAMPP Control Panel and start:
+Open the XAMPP Control Panel.
+
+Start the following services:
 
 Apache
 MySQL
-4. Create the Database
 
-Open phpMyAdmin in your browser:
+Both services should be running before proceeding.
+
+Step 4: Create the Database
+
+Open your web browser and go to:
 
 http://localhost/phpmyadmin
 
-Create the required database and import the SQL file:
+Create a new database for the project.
+
+Then select the created database and click on Import.
+
+Choose the following file from the project:
 
 database.sql
-5. Configure Database Connection
 
-Check the database connection details in:
+Click Go to import the database.
+
+Step 5: Configure Database Connection
+
+Open the database connection file:
 
 db_connect.php
 
-or
-
-connect.php
-
-Update the database name, username, and password according to your local MySQL configuration.
+Check the database connection details and update them according to your local MySQL configuration.
 
 Example:
 
@@ -119,38 +145,60 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $database = "music_streaming";
-6. Run the Website
 
-Open your browser and enter:
+If your project uses connect.php for the database connection, make sure the database details in that file are also correct.
+
+Step 6: Run the Project
+
+Open your web browser and enter:
 
 http://localhost/Music-Streaming-Website/
 
-The website should now run through the XAMPP local server.
+The Music Streaming Website should now open in your browser.
 
+📂 Project Structure
+Music-Streaming-Website/
+│
+├── index.html
+├── homepage.html
+├── login_page.html
+├── sign up page.html
+│
+├── style.css
+│
+├── app1.js
+├── app2.js
+│
+├── login_page.php
+├── dashboard.php
+├── helloworld.php
+├── connect.php
+├── db_connect.php
+│
+├── database.sql
+│
+└── README.md
 🎯 Project Objectives
-
-The main objectives of this project are:
-
-To develop an interactive music-based website.
-To understand frontend web development.
-To implement JavaScript functionality.
+To develop an interactive music streaming website.
+To implement frontend web development concepts.
+To use JavaScript for website interactions.
 To understand PHP backend development.
-To connect a web application with a MySQL database.
+To integrate a MySQL database with a web application.
 To implement basic user authentication.
 To gain practical experience with Git and GitHub.
 💡 Key Learning
 
 Through this project, I gained practical experience in:
 
-HTML page structure
-CSS styling and layout
-JavaScript interactions
-PHP server-side programming
-MySQL database connectivity
+HTML5
+CSS3
+JavaScript
+PHP
+MySQL
+Database connectivity
 Form handling
 User authentication
-Git version control
-GitHub repository management
+Git and GitHub
 🔮 Future Enhancements
 
 The project can be further enhanced by adding:
@@ -164,8 +212,9 @@ The project can be further enhanced by adding:
 🎚️ Advanced music player controls
 🎧 Real-time music streaming
 🔒 Improved authentication and security
-☁️ Online music storage
+
 👩‍💻 Author
+
 Jahnavi Thalanki
 
 GitHub:
