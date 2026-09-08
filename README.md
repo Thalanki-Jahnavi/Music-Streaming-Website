@@ -71,40 +71,35 @@ Music-Streaming-Website/
 ├── database.sql
 │
 └── README.md
+🚀 How to Run the Project
 
-## 🚀 How to Run the Project
+Follow the steps below to run the project on your local system.
 
-Follow these steps to run the Music Streaming Website on your local system.
+Prerequisites
 
-### Prerequisites
+Before running the project, make sure you have the following installed:
 
-Make sure the following are installed on your computer:
-
-- XAMPP
-- Web Browser
-- Git (optional, if cloning the repository)
-
-### Step 1: Clone the Repository
+XAMPP
+Web Browser
+Git (optional)
+1. Clone the Repository
 
 Open Command Prompt or Git Bash and run:
 
-```bash
 git clone https://github.com/Thalanki-Jahnavi/Music-Streaming-Website.git
 
-Or download the repository as a ZIP file from GitHub.
+Or download the repository as a ZIP file from GitHub and extract it.
 
-Step 2: Move the Project to XAMPP
+2. Move the Project to XAMPP
 
-If you downloaded the project as a ZIP file, extract it.
-
-Copy the Music-Streaming-Website folder into the XAMPP htdocs directory:
+Copy the Music-Streaming-Website folder into the XAMPP htdocs directory.
 
 C:\xampp\htdocs\
 
-The project should be located at:
+The project folder should be located at:
 
 C:\xampp\htdocs\Music-Streaming-Website\
-Step 3: Start XAMPP
+3. Start XAMPP
 
 Open the XAMPP Control Panel.
 
@@ -113,17 +108,17 @@ Start the following services:
 Apache
 MySQL
 
-Both services should be running before proceeding.
+Make sure both services are running.
 
-Step 4: Create the Database
+4. Create the Database
 
-Open your web browser and go to:
+Open your browser and go to:
 
 http://localhost/phpmyadmin
 
 Create a new database for the project.
 
-Then select the created database and click on Import.
+Then select the database and click Import.
 
 Choose the following file from the project:
 
@@ -131,13 +126,13 @@ database.sql
 
 Click Go to import the database.
 
-Step 5: Configure Database Connection
+5. Configure Database Connection
 
 Open the database connection file:
 
 db_connect.php
 
-Check the database connection details and update them according to your local MySQL configuration.
+Check the database connection details and update them according to your MySQL configuration.
 
 Example:
 
@@ -146,9 +141,9 @@ $username = "root";
 $password = "";
 $database = "music_streaming";
 
-If your project uses connect.php for the database connection, make sure the database details in that file are also correct.
+If the project uses connect.php for the database connection, make sure the database details in that file are also correct.
 
-Step 6: Run the Project
+6. Run the Project
 
 Open your web browser and enter:
 
@@ -156,28 +151,6 @@ http://localhost/Music-Streaming-Website/
 
 The Music Streaming Website should now open in your browser.
 
-📂 Project Structure
-Music-Streaming-Website/
-│
-├── index.html
-├── homepage.html
-├── login_page.html
-├── sign up page.html
-│
-├── style.css
-│
-├── app1.js
-├── app2.js
-│
-├── login_page.php
-├── dashboard.php
-├── helloworld.php
-├── connect.php
-├── db_connect.php
-│
-├── database.sql
-│
-└── README.md
 🎯 Project Objectives
 To develop an interactive music streaming website.
 To implement frontend web development concepts.
@@ -212,7 +185,6 @@ The project can be further enhanced by adding:
 🎚️ Advanced music player controls
 🎧 Real-time music streaming
 🔒 Improved authentication and security
-
 👩‍💻 Author
 
 Jahnavi Thalanki
